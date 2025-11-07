@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-main{
+    color: #ff0000;
+}
+.btn-danger{
+  color: red;
+}
+.bg{
+  background-color: #ff0000;
+}
+
+.vertical-padding{
+    margin:  40px auto;
+    width: 90vw;
+}
+.size-set{
+  height: 50px;
+  width: 50px;
+}
+.big{
+  font-size: 40px;
+  font-weight: bolder;
+  
+}
+
+
+.logo img{
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+}
+header .logo span{
+    font-size: 35px;
+    font-weight: bolder;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+header .navbar ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: 2s ease;
+}
+header .navbar ul li a:hover{
+    color: red;
+}
+
+/* header end here  */
+
+/* hero section start here  */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(to left red);
+}
+.hero .about h1{
+    font-size: 55px;
+    font-weight: bold;
+    /* display: inline; */
+}
+.hero .image{
+    flex: 1;
+    
+}
+.hero .about{
+    flex: 1;
+    margin-top: 40px;
+}
+
+ .image img{
+    height: 400px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: rgba(241, 5, 5, 0.678) 5px 5px 5px;
+}
+body a{
+  text-decoration: none;
+  color: #ff0000;
+}
+
+/* mobile responsive  for 320px  */
+@media (max-width:320px){
+    body{
+        font-size: 15px;
+        overflow-x: hidden;
+    }
+    .vertical-padding{
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+     h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    }
+     h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    }
+      h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+    p, span {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  header .logo img{
+    height: 50px;
+    width: 50px;
+  }
+  header .logo span{
+    font-size: 25px;
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .hero .image{
+    order: 1;
+  }
+  .hero .about{
+    order: 2;
+  }
+  /* .hero .image img{
+    height: 280px;
+    width: 300px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin: 20px auto;
+  } */
+  .hero .about h1{
+    font-size: 40px;
+  }
+  .hero .about span{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .hero .about p{
+    font-size: 16px;
+  }
+  .hero .about  button{
+    margin-left: 80px;
+}
+.hero .about .intro div span{
+ font-size: 20px;
+}
+.heroh .about .intro div p{
+  font-size: 15px;
+}
+.carousel-item img {
+    width: 200px;
+  }
+}
