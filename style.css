@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+ body{
+  overflow-x: hidden;
+ }
 .bg-main{
     color: #ff0000;
 }
@@ -89,77 +92,88 @@ body a{
 }
 
 /* mobile responsive  for 320px  */
-@media (max-width:320px){
-    body{
+@media (max-width: 767px) {
+    body {
         font-size: 15px;
         overflow-x: hidden;
+        background-color: beige;
     }
-    .vertical-padding{
+
+    .vertical-padding {
         width: 100%;
         margin: 0;
         padding: 0 10px;
     }
-     h1 {
-    font-size: 2.5rem;
-    text-align: center;
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
     }
-     h2 {
-    font-size: 1.7rem;
-    text-align: center;
+
+    h2 {
+        font-size: 1.7rem;
+        text-align: center;
     }
-      h3 {
-    font-size: 1.4rem;
-    text-align: center;
-  }
+
+    h3 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
     p, span {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  
-  header .logo img{
-    height: 50px;
-    width: 50px;
-  }
-  header .logo span{
-    font-size: 25px;
-  }
-  .hero{
-    flex-direction: column;
-  }
-  .hero .image{
-    order: 1;
-  }
-  .hero .about{
-    order: 2;
-  }
-  /* .hero .image img{
-    height: 280px;
-    width: 300px;
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin: 20px auto;
-  } */
-  .hero .about h1{
-    font-size: 40px;
-  }
-  .hero .about span{
-    font-size: 30px;
-    font-weight: bolder;
-  }
-  .hero .about p{
-    font-size: 16px;
-  }
-  .hero .about  button{
-    margin-left: 80px;
-}
-.hero .about .intro div span{
- font-size: 20px;
-}
-.heroh .about .intro div p{
-  font-size: 15px;
-}
-.carousel-item img {
-    width: 200px;
-  }
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    header .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    header .logo span {
+        font-size: 25px;
+    }
+
+    .hero .image {
+        order: 1;
+    }
+
+    .hero .about {
+        order: 2;
+    }
+
+    .hero .image img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .hero .about h1 {
+        font-size: 40px;
+    }
+
+    .hero .about span {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .hero .about p {
+        font-size: 16px;
+    }
+
+    .hero .about button {
+        margin-left: 80px;
+    }
+
+    .hero .about .intro div span {
+        font-size: 20px;
+    }
+
+    .hero .about .intro div p {
+        font-size: 15px;
+    }
+
+    .carousel-item img {
+        width: 200px;
+    }
 }
